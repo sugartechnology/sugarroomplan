@@ -10,6 +10,7 @@ import RoomPlan
 
 class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, RoomCaptureSessionDelegate {
     
+    @IBOutlet weak var popupBrands: ViewStyle!
     @IBOutlet var exportButton: UIButton?
     
     @IBOutlet var doneButton: UIBarButtonItem?
@@ -22,11 +23,14 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
     
     private var finalResults: CapturedRoom?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set up after loading the view.
         setupRoomCaptureView()
+        popupBrands.isHidden = true;
     }
     
     private func setupRoomCaptureView() {
@@ -84,13 +88,26 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
         do {
             try finalResults?.export(to: destinationURL)
             
-            let activityVC = UIActivityViewController(activityItems: [destinationURL], applicationActivities: nil)
+            let activityVC = UIActivityViewController(activityItems: [destinationURL], applicationActivities:
+                                                        [CustomActivity(title:"İstikbale Gönder", imagePath: "istikbal"),
+                                                         CustomActivity(title:"Bellonaya Gönder", imagePath: "bellona_logo")])
             activityVC.modalPresentationStyle = .popover
             
             present(activityVC, animated: true, completion: nil)
+            
             if let popOver = activityVC.popoverPresentationController {
                 popOver.sourceView = self.exportButton
             }
+            
+            //self.popupBrands.isHidden = false
+            self.popupBrands.transform = CGAffineTransform(scaleX: 1.0, y: 0.0)
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [],  animations: {
+                    //use if you want to darken the background
+                    //self.viewDim.alpha = 0.8
+                    //go back to original form
+                self.popupBrands.transform = .identity
+            })
+
         } catch {
             print("Error = \(error)")
         }
@@ -103,6 +120,7 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
             self.exportButton?.alpha = 0.0
         }, completion: { complete in
             self.exportButton?.isHidden = true
+            self.popupBrands.isHidden = true
         })
     }
     
@@ -114,6 +132,11 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
             self.doneButton?.title = "Done"
             self.exportButton?.alpha = 1.0
         }
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.popupBrands.isHidden = true
     }
 }
 

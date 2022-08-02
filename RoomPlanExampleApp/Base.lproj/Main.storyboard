@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21157" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdR-sG-hoR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdR-sG-hoR">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21151.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,28 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-tu-CeD">
-                                <rect key="frame" x="40" y="230" width="348" height="152.33333333333337"/>
-                                <string key="text">To scan your room, point your device at all the walls, windows, doors and furniture in your space until your scan is complete.
-
-You can see a preview of your scan at the bottom of the screen so you can make sure your scan is correct. </string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoomPlan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-He-YN5">
-                                <rect key="frame" x="133.66666666666669" y="174" width="160.66666666666669" height="41"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="r5J-Dx-sgl">
-                                <rect key="frame" x="114" y="809" width="200" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasarlamak istediğiniz yaşam alanını, telefonunuz ile tarayabilir ve rapid rendera yükleyebilirsiniz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-tu-CeD">
+                                <rect key="frame" x="38" y="609" width="348" height="135.66666666666663"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="QUA-Ca-Q71"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="sD5-cO-lCf"/>
+                                    <constraint firstAttribute="width" constant="348" id="RB3-Gh-LtS"/>
+                                    <constraint firstAttribute="height" constant="135.66999999999999" id="WSX-ye-H5L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oda Tarama" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-He-YN5">
+                                <rect key="frame" x="112.00000000000001" y="538" width="199.33333333333337" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199.33000000000001" id="5OU-s2-JH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ize-a9-n85">
+                                <rect key="frame" x="65" y="89" width="294" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="334.32999999999998" id="9bg-qu-et6"/>
+                                    <constraint firstAttribute="width" constant="294" id="BBh-oc-5qO"/>
+                                    <constraint firstAttribute="height" constant="334.32999999999998" id="Gsx-kj-TAv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="294" id="gvW-p1-okN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="r5J-Dx-sgl">
+                                <rect key="frame" x="111" y="793" width="200" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="QUA-Ca-Q71"/>
+                                    <constraint firstAttribute="width" constant="200" id="jik-zy-ckz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="qgz-Tr-ot6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="199" id="sD5-cO-lCf"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start Scanning" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Taramaya Başla" cornerStyle="capsule">
                                     <backgroundConfiguration key="background"/>
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                 </buttonConfiguration>
@@ -49,20 +64,20 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                         <viewLayoutGuide key="safeArea" id="6Fz-hG-eHB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7pk-tu-CeD" firstAttribute="leading" secondItem="yBf-P1-2uZ" secondAttribute="leading" constant="40" id="5Ff-Ks-CH2"/>
-                            <constraint firstItem="7pk-tu-CeD" firstAttribute="centerX" secondItem="yBf-P1-2uZ" secondAttribute="centerX" id="IgI-hg-NjN"/>
-                            <constraint firstItem="r5J-Dx-sgl" firstAttribute="centerX" secondItem="yBf-P1-2uZ" secondAttribute="centerX" id="SJ7-JW-icA"/>
-                            <constraint firstItem="cDs-He-YN5" firstAttribute="top" secondItem="6Fz-hG-eHB" secondAttribute="top" constant="130" id="SQJ-hz-omc"/>
-                            <constraint firstItem="6Fz-hG-eHB" firstAttribute="bottom" secondItem="r5J-Dx-sgl" secondAttribute="bottom" constant="33" id="WAH-Xu-OKa"/>
-                            <constraint firstItem="7pk-tu-CeD" firstAttribute="top" secondItem="cDs-He-YN5" secondAttribute="bottom" constant="15" id="WHO-Ho-ovq"/>
-                            <constraint firstItem="cDs-He-YN5" firstAttribute="centerX" secondItem="yBf-P1-2uZ" secondAttribute="centerX" id="Wjg-Iv-gWw"/>
-                            <constraint firstAttribute="trailing" secondItem="7pk-tu-CeD" secondAttribute="trailing" constant="40" id="fCa-8j-XGw"/>
+                            <constraint firstItem="7pk-tu-CeD" firstAttribute="leading" secondItem="6Fz-hG-eHB" secondAttribute="leading" constant="38" id="Ej4-Yx-pS2"/>
+                            <constraint firstItem="r5J-Dx-sgl" firstAttribute="leading" secondItem="6Fz-hG-eHB" secondAttribute="leading" constant="111" id="RtS-Fv-Lpm"/>
+                            <constraint firstItem="7pk-tu-CeD" firstAttribute="top" secondItem="cDs-He-YN5" secondAttribute="bottom" constant="28" id="Wgx-ib-HAU"/>
+                            <constraint firstItem="r5J-Dx-sgl" firstAttribute="top" secondItem="7pk-tu-CeD" secondAttribute="bottom" constant="48.329999999999998" id="cGJ-3t-iLs"/>
+                            <constraint firstItem="cDs-He-YN5" firstAttribute="leading" secondItem="6Fz-hG-eHB" secondAttribute="leading" constant="112" id="k6T-bl-RK6"/>
+                            <constraint firstItem="6Fz-hG-eHB" firstAttribute="bottom" secondItem="r5J-Dx-sgl" secondAttribute="bottom" constant="50" id="ks5-Is-YTP"/>
+                            <constraint firstItem="ize-a9-n85" firstAttribute="top" secondItem="6Fz-hG-eHB" secondAttribute="top" constant="45" id="w6a-Xq-n9c"/>
+                            <constraint firstItem="ize-a9-n85" firstAttribute="leading" secondItem="6Fz-hG-eHB" secondAttribute="leading" constant="65" id="xfL-2l-e4A"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnn-iT-DWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1593" y="133"/>
+            <point key="canvasLocation" x="-1593.9252336448596" y="132.82937365010801"/>
         </scene>
         <!--Room Capture View Controller-->
         <scene sceneID="aNf-ca-iLV">
@@ -72,7 +87,7 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="OzX-Pp-2Ee">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="OzX-Pp-2Ee">
                                 <rect key="frame" x="139" y="793" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="210-sX-00Y"/>
@@ -80,7 +95,7 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                                 </constraints>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Export" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Gönder" cornerStyle="capsule">
                                     <backgroundConfiguration key="background"/>
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                 </buttonConfiguration>
@@ -88,11 +103,57 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                                     <action selector="exportResults:" destination="ocJ-nv-BaW" eventType="touchUpInside" id="gF2-ar-BXi"/>
                                 </connections>
                             </button>
+                            <view opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ijf-ZP-B3e" customClass="ViewStyle" customModule="RoomPlanExampleApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="224" width="428" height="167"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bellona_logo" translatesAutoresizingMaskIntoConstraints="NO" id="QBz-PP-NxV" customClass="ViewStyle" customModule="RoomPlanExampleApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="14" width="75" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="istikbal" translatesAutoresizingMaskIntoConstraints="NO" id="IkX-jI-Tmb" customClass="ViewStyle" customModule="RoomPlanExampleApp" customModuleProvider="target">
+                                        <rect key="frame" x="102" y="14" width="75" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="wXG-aY-rLE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WOl-ED-SbL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Ijf-ZP-B3e" firstAttribute="leading" secondItem="WOl-ED-SbL" secondAttribute="leading" id="88C-Fn-5rZ"/>
+                            <constraint firstItem="WOl-ED-SbL" firstAttribute="trailing" secondItem="Ijf-ZP-B3e" secondAttribute="trailing" id="Ftr-H4-afq"/>
                             <constraint firstItem="OzX-Pp-2Ee" firstAttribute="centerX" secondItem="nWS-xs-VtG" secondAttribute="centerX" id="gon-am-9Jr"/>
+                            <constraint firstItem="OzX-Pp-2Ee" firstAttribute="top" secondItem="Ijf-ZP-B3e" secondAttribute="bottom" constant="402" id="osI-Dy-xNz"/>
                             <constraint firstItem="OzX-Pp-2Ee" firstAttribute="bottom" secondItem="WOl-ED-SbL" secondAttribute="bottom" id="s3Z-zR-pG8"/>
                         </constraints>
                     </view>
@@ -114,6 +175,7 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                         <outlet property="cancelButton" destination="6LV-FR-JQF" id="oID-mD-Z4l"/>
                         <outlet property="doneButton" destination="MQz-pc-UhC" id="5nF-0P-w1J"/>
                         <outlet property="exportButton" destination="OzX-Pp-2Ee" id="b0k-6y-wHv"/>
+                        <outlet property="popupBrands" destination="Ijf-ZP-B3e" id="zAy-1t-dAV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4N-9i-teE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -138,6 +200,9 @@ You can see a preview of your scan at the bottom of the screen so you can make s
         </scene>
     </scenes>
     <resources>
+        <image name="bellona_logo" width="330" height="330"/>
+        <image name="istikbal" width="1024" height="723"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
